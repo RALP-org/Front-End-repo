@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract class PrimaryTheme1 {
+abstract class PrimaryTheme {
   PrimaryTheme._();
 
   static ThemeData generateTheme(BuildContext context) {

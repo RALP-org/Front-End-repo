@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ralp/ui/root_page/root_page.dart';
-
+import 'package:ralp/ui/sign_up_page/sign_up_page.dart';
+import 'package:ralp/ui/sign_in_page/sign_in_page.dart';
+// import 'package:ralp/ui/home_page/home_page.dart';
+// import 'package:ralp/ui/search_page/search_page.dart';
 
 abstract class Routes {
   Routes._();
@@ -12,8 +15,8 @@ abstract class Routes {
   static const SEARCH_ROUTE = "SearchPage";
 
   static const rootPage = RootView();
-  // static const registerPage = SignUpView();
-  // static const loginPage = SignInView();
+  static const registerPage = SignUpView();
+  static const loginPage = SignInView();
   // static const homePage = HomeView();
   // static const searchPage = SearchView();
 
@@ -22,11 +25,11 @@ abstract class Routes {
       case ROOT_ROUTE:
         return MaterialPageRoute(builder: (context) => rootPage);
 
-      // case REGISTER_ROUTE:
-      //   return MaterialPageRoute(builder: (context) => registerPage);
+      case REGISTER_ROUTE:
+        return MaterialPageRoute(builder: (context) => registerPage);
 
-      // case LOGIN_ROUTE:
-      //   return MaterialPageRoute(builder: (context) => loginPage);
+      case LOGIN_ROUTE:
+        return MaterialPageRoute(builder: (context) => loginPage);
 
       // case HOME_ROUTE:
       //   return MaterialPageRoute(builder: (context) => homePage);
